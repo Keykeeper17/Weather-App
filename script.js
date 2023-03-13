@@ -51,6 +51,3 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event){
 })
 
 weather.fetchWeather("Tokyo");
-if (weather.search() !== undefined || weather.search() !== null) {
-    console.log("Invalid city name");
-  }
