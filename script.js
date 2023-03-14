@@ -10,7 +10,6 @@ Todo:
 let weather = {
     "apiKey": "731e47053b61cf63aa05b2f6fe908859",
     fetchWeather: function(city){
-        
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" 
             + city +"&appid=" 
