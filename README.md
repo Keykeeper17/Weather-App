@@ -12,7 +12,7 @@
 
 ✅ Dynamic display, including random background images.
 
-## Extra: 
+## Extras: 
 
 ✅ Better error handling if API call fails.
 
