@@ -11,6 +11,7 @@ Minimum requirements:
 
 Extra: 
 ✅ Better error handling if API call fails.
+
 ✅ Prevent duplicate API calls. 
 - [ ] Add the option to change the language. 
 - [ ] Add the option to toggle between imperial and metric. 
