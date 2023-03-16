@@ -28,10 +28,10 @@ let weather = {
                 document.querySelector(".cityfound").classList.add("notfound");
                 throw new Error("Unsucessful API Call: "+response.status+': '+response.statusText);
             }
+            //If previous API call matches current city then return old data to save making new API call.
             else if (oldResponse == city){
                 console.log("Duplicate response");
                 console.log(oldResponse);
-                //throw new Error("City match, Current data is the same.");
                 return oldResponse;
             }
             oldResponse = response;
