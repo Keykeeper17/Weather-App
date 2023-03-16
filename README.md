@@ -1,10 +1,10 @@
 # Weather App
  A website that uses a weather API to get the searched city's weather.
 
-Project Complete: ✅
+# Project Complete: ✅
 
 
-Minimum requirements: 
+## Minimum requirements: 
 
 ✅ Searchable weather by city name.
 
@@ -12,7 +12,7 @@ Minimum requirements:
 
 ✅ Dynamic display, including random background images.
 
-Extra: 
+## Extra: 
 
 ✅ Better error handling if API call fails.
 
