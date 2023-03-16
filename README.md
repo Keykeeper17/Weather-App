@@ -5,12 +5,15 @@ Project Complete: ✅
 
 
 Minimum requirements: 
+
 ✅ Searchable weather by city name.
+
 ✅ Display city name, tempature, humidity and wind speed.
 
 ✅ Dynamic display, including random background images.
 
 Extra: 
+
 ✅ Better error handling if API call fails.
 
 ✅ Prevent duplicate API calls. 
