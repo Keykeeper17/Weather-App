@@ -76,6 +76,10 @@ body {
     font-family: inherit;
   }
 
+  select:hover{
+    background-color: black;
+  }
+
 
   .cityfound{
     visibility: hidden;
