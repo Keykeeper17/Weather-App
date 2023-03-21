@@ -42,23 +42,36 @@ let weather = {
             document.querySelector(".cityfound").classList.remove("notfound");
             return response.json();
         })
-        .then(data => this.displayWeather(data))
+        .then(data => this.displayWeather(data, units))
         .catch(error => console.error(error));
     },
-    displayWeather: function(data){
+    displayWeather: function(data, units){
         const { name } = data;
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
+        console.log(units);
 
         console.log(name, icon, description, temp, humidity, speed)
 
         document.querySelector(".city").innerText = "Weather in " + name;
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText =  Math.round(temp) + "°F";
+        if (units == "imperial"){
+            document.querySelector(".temp").innerText =  Math.round(temp) + "°F";
+        }
+        else{
+            document.querySelector(".temp").innerText =  Math.round(temp) + "°C";
+        }
+        
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind speed: " + speed.toFixed(1) + " mph";
+
+        if (units == "imperial"){
+            document.querySelector(".wind").innerText = "Wind speed: " + speed.toFixed(1) + " mph";
+        }
+        else{
+            document.querySelector(".wind").innerText = "Wind speed: " + speed.toFixed(1) + " kph";
+        }
 
         document.querySelector(".weather").classList.remove("loading");
         document.body.style.backgroundImage = "url('https:/source.unsplash.com/2000x1100/?" + name + ",city" +"')"
