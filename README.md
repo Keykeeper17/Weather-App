@@ -1,16 +1,21 @@
 # Weather App
- A website that uses a weather API to get the searched city's weather.
+ A website that uses a weather API to get the searched city's weatherby name.
 
-Project Complete:
-- [x]
+# Project Complete: ✅
 
-Minimum requirements: 
-- [x] Searchable weather by city name.
-- [x] Display city name, tempature, humidity and wind speed.
-- [x] Dynamic display, including random background images.
 
-Extra: 
-- [x] Better error handling if API call fails.
-- [x] Prevent duplicate API calls. 
+## Minimum requirements: 
+
+✅ Searchable weather by city name.
+
+✅ Display city name, tempature, humidity and wind speed.
+
+✅ Dynamic display, including random background images.
+
+## Extras: 
+
+✅ Better error handling if API call fails.
+
+✅ Prevent duplicate API calls. 
 - [ ] Add the option to change the language. 
 - [ ] Add the option to toggle between imperial and metric. 
