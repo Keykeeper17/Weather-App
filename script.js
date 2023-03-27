@@ -11,7 +11,7 @@ let oldResponse;
 let oldCity;
 
 let weather = {
-    "apiKey": "731e47053b61cf63aa05b2f6fe908859",
+    "apiKey": "####",
     fetchWeather: function(city, units, lang){
         //fetch funciton always returns OK unless something odd like a networking issue...etc.
         fetch(
