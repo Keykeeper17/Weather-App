@@ -10,6 +10,8 @@ Todo:
 let oldResponse;
 let oldCity;
 
+console.error("Enter your API Key below if not entered. By default this is removed for security!");
+
 let weather = {
     "apiKey": "####",
     fetchWeather: function(city, units, lang){
