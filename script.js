@@ -12,7 +12,7 @@ let oldCity;
 
 let weather = {
     "apiKey": "731e47053b61cf63aa05b2f6fe908859",
-    fetchWeather: function(city, units){
+    fetchWeather: function(city, units, lang){
         //fetch funciton always returns OK unless something odd like a networking issue...etc.
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" 
@@ -20,6 +20,8 @@ let weather = {
             + this.apiKey 
             + "&units="
             + units
+            + "&lang="
+            + lang
         ).then((response) => {
             //Checks if API response was not a success (status range 200-299)
             //console.log("&units=" + units);
@@ -39,6 +41,7 @@ let weather = {
             oldResponse = response;
             oldCity = city;
             console.log("SUCCESS response");
+            console.log(response);
             document.querySelector(".cityfound").classList.remove("notfound");
             return response.json();
         })
@@ -77,7 +80,11 @@ let weather = {
         document.body.style.backgroundImage = "url('https:/source.unsplash.com/2000x1100/?" + name + ",city" +"')"
     },
     search: function(){
-        this.fetchWeather(document.querySelector(".search-bar").value, document.querySelector(".units").value);
+        this.fetchWeather(
+        document.querySelector(".search-bar").value, 
+        document.querySelector(".units").value,
+        document.querySelector(".langs").value
+        );
     }
 }  
 
@@ -91,4 +98,4 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event){
     }
 });
 
-weather.fetchWeather("Tokyo", "imperial");
+weather.fetchWeather("Tokyo", "imperial", "en");
