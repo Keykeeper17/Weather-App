@@ -1,7 +1,7 @@
 # Weather App
 A website that uses a weather API to get the searched city's weather by name.
 
-<img  aligh="center" src="images/WeatherAppExample.png" alt="" width="311" height="247.5">
+<img  aligh="center" src="images/WeatherAppExample.png" alt="" width="411" height="347.5">
 
 ### Summary: 
 Used the <a href="https://openweathermap.org/">OpenWeather</a> API to dynamically get the current weather from popular cities by searching by their names. Utilizing HTML, CSS and JavaScript skills to complete this project.
