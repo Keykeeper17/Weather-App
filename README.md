@@ -1,23 +1,31 @@
 # Weather App
- A website that uses a weather API to get the searched city's weatherby name.
+A website that uses a weather API to get the searched city's weather by name.
 
-# Project Complete: ✅
+<img  aligh="center" src="images/WeatherAppExample.png" alt="" width="311" height="247.5">
+
+### Summary: 
+Used the <a href="https://openweathermap.org/">OpenWeather</a> API to dynamically get the current weather from popular cities by searching by their names. Utilizing HTML, CSS and JavaScript skills to complete this project.
 
 
-## Minimum requirements: 
+## Project Status (Complete): ✅
 
-✅ Searchable weather by city name.
 
-✅ Display city name, tempature, humidity and wind speed.
+**Minimum requirements:**
 
-✅ Dynamic display, including random background images.
+    ✅ Searchable weather by city name.
 
-## Extras: 
+    ✅ Display city name, tempature, humidity and wind speed.
 
-✅ Better error handling if API call fails.
+    ✅ Dynamic display, including random background images.
 
-✅ Prevent duplicate API calls. 
+**Extras:**
 
-✅ Add the option to change the language. 
+    ✅ Better error handling if API call fails.
 
-✅ Add the option to toggle between imperial and metric. 
+    ✅ Prevent duplicate API calls. 
+
+    ✅ Add the option to change the language. 
+
+    ✅ Add the option to toggle between imperial and metric. 
+
+## 
